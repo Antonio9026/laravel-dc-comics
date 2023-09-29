@@ -1,6 +1,6 @@
-@extends("layouts.public")
+{{-- @extends("layouts.public")
 
-@section("title","homepage")
-@section("home")
+@section("title","homepage") 
+ @section("home")
     <h1>ciao</h1>
-@endsection
+@endsection --}}
