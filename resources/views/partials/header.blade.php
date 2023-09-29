@@ -1,7 +1,7 @@
 <header>
     <div class="container">
         <div class="header-logo">
-          <a href="#"><img src="img/dc-logo.png" alt=""></a>
+          <a href="#"><img src="/img/dc-logo.png" alt=""></a>
         </div>
         <nav>
           <ul class="header-list" >
@@ -39,7 +39,11 @@
         </nav>
     
       </div>
-      <div class="hero"></div>
+      
+        <div class="hero"></div>
+        <div class="blue_row"></div>
+      
+      
 
 
 </header>

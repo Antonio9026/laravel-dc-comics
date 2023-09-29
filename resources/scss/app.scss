@@ -68,6 +68,10 @@
     background-image: url("/public/img/jumbotron.jpg");
     background-size: cover;
   }
+  .blue_row{
+    height: 40px;
+    background-color: #0282f9;
+  }
   
   
   
@@ -99,7 +103,7 @@
   
     .series {
       max-width: 140px;
-      color: rgb(112, 17, 17);
+      color: white;
       font-size: 11px;
     }
   }
