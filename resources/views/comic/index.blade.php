@@ -1,7 +1,7 @@
 @extends("layouts.public")
 {{-- @section("comic","Dc comics") --}}
 
-@section("content")       
+@section("content")  <div class="container-dc">    
 <div class="card-wrapper">
     @foreach ( $comics as $comic)
     <div class="card">
@@ -38,7 +38,7 @@
         <p>DC POWER VISA</p>
     </div>
 </div>
-    
+</div> 
 @endsection
 
 
