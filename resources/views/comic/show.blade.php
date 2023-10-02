@@ -42,11 +42,11 @@
                         <h1>Talent</h1>
                         <div class="card-down">
                             <p class="static">Art by: </p>
-                            <p class="dinamic"> {{ join(', ', json_decode($comics['artists'])) }}</p>
+                            <p class="dinamic"> {{ join(',', json_decode($comics['artists'])) }}</p>
                         </div>
                         <div class="card-down">
                             <p class="static">Written by: </p>
-                            <p class="dinamic"> {{ join(', ', json_decode($comics['writers'])) }}</p>
+                            <p class="dinamic"> {{ join(',',json_decode($comics['writers'])) }}</p>
                         </div>
                     </div>
                     <div class="card-right">

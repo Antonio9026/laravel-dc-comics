@@ -36,9 +36,13 @@ class ComicController extends Controller
         $newComics->series = $data["series"];
         $newComics->sale_date = $data["sale_date"];
         $newComics->type = $data["type"];
-        $newComics->artists = $data["artists"];
-        $newComics->writers = $data["writers"];
-
+        $newComics->artists =  json_encode([$data["artists"]]);
+        $newComics->writers =json_encode([$data["writers"]]) ;
+       
         $newComics->save();
+
+        // dopo che salvo i nuovi dati inseriti da form faccio redirect a pagina index 
+        // perchè se l'utente rimane sulla stessa pagina e dovesse fare refresh pagina verrebbe rieseguito salvataggio dei dati appena inseriti
+        return redirect()->route("comic.index");
     }
 }
