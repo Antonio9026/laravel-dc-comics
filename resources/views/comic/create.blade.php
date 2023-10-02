@@ -1,9 +1,9 @@
 @extends('layouts.public')
 
 @section('content')
-    <h1>ciao</h1>
+   
     <div class="container-form">
-        <form action="" method="POST">
+        <form action="{{ route('comic.store')}}" method="POST">
             @csrf()
 
             <label>Titolo:</label><br>
