@@ -297,7 +297,7 @@
   }
 
   .card-left{
-    width: 40%;
+    max-width: 40%;
     
   }
   .card-left h1, .card-right  h1{
@@ -306,7 +306,7 @@
     color: #003f5e;
   }
   .card-right{
-    width: 40%;
+    max-width: 40%;
   
   }
  .static{

@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// redirect padina comics 
+
+Route::get("/",function (){
+    return redirect()->route("comic.index");
+    });
+    
+
 
 
 // route index
@@ -20,6 +27,4 @@ Route::get("/comic", [ComicController::class,"index"])->name("comic.index");
 
 // route show 
 Route::get("/comic/{comic}", [ComicController::class,"show"])->name("comic.show");
-
-
 
