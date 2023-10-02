@@ -22,9 +22,15 @@ Route::get("/",function (){
 
 
 
+
+
+// CREATE 
+Route::get("/comic/create", [ComicController::class,"create"])->name("comic.create");
+Route::post("/comic", [ComicController::class,"store"])->name("comic.store");
+
+
+// READ 
 // route index
 Route::get("/comic", [ComicController::class,"index"])->name("comic.index");
-
 // route show 
 Route::get("/comic/{comic}", [ComicController::class,"show"])->name("comic.show");
-

@@ -17,4 +17,13 @@ class ComicController extends Controller
 
         return view("comic.show", ["comics" => $comics]);
     } 
+
+    public function create(Request $request){
+        $comics = $request->all();
+        
+    }
+
+    public function store(){
+
+    }
 }
