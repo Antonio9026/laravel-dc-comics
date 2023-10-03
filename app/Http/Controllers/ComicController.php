@@ -13,7 +13,7 @@ class ComicController extends Controller
     }
 
     public function show($id){
-        $comics = Comic::find($id);
+        $comics = Comic::findOrFail($id);
 
         return view("comic.show", ["comics" => $comics]);
     } 
@@ -44,5 +44,16 @@ class ComicController extends Controller
         // dopo che salvo i nuovi dati inseriti da form faccio redirect a pagina index 
         // perchè se l'utente rimane sulla stessa pagina e dovesse fare refresh pagina verrebbe rieseguito salvataggio dei dati appena inseriti
         return redirect()->route("comic.index");
+    }
+
+    public function edit($id){
+        
+        $comics = Comic::findOrFail($id);
+
+        return view("comic.edit", ["comics" => $comics]);
+    }
+
+    public function update($id){
+
     }
 }

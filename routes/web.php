@@ -34,3 +34,9 @@ Route::post("/comic", [ComicController::class,"store"])->name("comic.store");
 Route::get("/comic", [ComicController::class,"index"])->name("comic.index");
 // route show 
 Route::get("/comic/{comic}", [ComicController::class,"show"])->name("comic.show");
+
+// UPDATE 
+// Mostra un form dove l'utente può fare modifiche 
+Route::get("/comic/{id}/edit",[ComicController::class,"edit"])->name("comic.edit");
+// la route dell'update posso chiamarla in put o path è indifferente, questa rotta riceverà i dati di edit e aggiornare l'elemento nel database a differenza dello store che crea l'elemento
+Route::put("/comic/{id}", [ComicController::class,"update"])->name("comic.update");
