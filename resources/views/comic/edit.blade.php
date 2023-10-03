@@ -12,7 +12,7 @@
             <label>Titolo:</label><br>
             <input type="text" name="title" value="{{$comics->title}}"><br>
             <label>Descrizione:</label><br>
-            <textarea type="text" name="description" value="{{$comics->description}}"></textarea><br><br>
+            <textarea type="text" name="description">{{$comics->description}}</textarea><br><br>
             <label>Immagine:</label><br>
             <input type="text" name="thumb" value="{{$comics->thumb}}"><br>
             <label>Prezzo:</label><br>
