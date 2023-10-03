@@ -4,10 +4,16 @@
 @section('content')
     <div class="container-dc-show">
         <a href="{{ route('comic.index') }}"><button>torna indietro</button></a>
+        <form action="{{ route("comic.destroy", $comics->id)}}" method="POST">  
+        @csrf
+        @method("DELETE")
+         <button>Elimina</button>
+        </form>
         <div class="card-wrapper-show">
             {{-- @dd($comics) --}}
 
             <div class="card-show">
+                
                 <div class="img-container-show">
                     <img src="{{ $comics['thumb'] }}" alt="">
                 </div>

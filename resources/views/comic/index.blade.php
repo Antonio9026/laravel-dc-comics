@@ -5,15 +5,19 @@
 <div class="card-wrapper">
     @foreach ( $comics as $comic)
     <div class="card">
+        
         <div class="img-container">
             <a href="/comic/{{$comic->id}}"><img src="{{$comic['thumb']}}" alt=""></a>
         </div>
+        <a href="{{ route("comic.edit", $comic->id)}}"><button>Modifica</button></a>
         <div class="series">
             <a href="/comic/{{$comic->id}}"><h1>{{$comic['title']}}</h1></a>
            
         </div>
+        
     </div>
     @endforeach
+    
     <button class="load-button"><strong>LOAD MORE</strong></button>
 </div>
 <div class="banner_container">
